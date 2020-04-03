@@ -1,3 +1,12 @@
+/* Variables */
+:root {
+  --spacing-xs: 4px;
+  --spacing-s : 8px;
+  --spacing-m : 12px;
+  --spacing-l : 24px;
+  --spacing-xl: 36px;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -73,6 +82,12 @@ select {
 img:not([alt]) {
   filter: blur(10px);
 }
+
+/* Support visually "hidden" attribute */
+[hidden] {display: none !important}
+
+/* Prevent interaction with disabled elements (IE11+) */
+[disabled] {pointer-events:none; opacity: 0.3}
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
